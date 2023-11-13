@@ -1,3 +1,29 @@
+//swiper index
+//首頁review swiper
+var swiper = new Swiper(".mySwiper", {
+  spaceBetween: 30,
+  loop: true,
+  loopFillGroupWithBlank: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+var swiper = new Swiper(".reviewSwiper", {
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+//js for products list
 const productList = document.querySelector("#productList");
 //filter by food type
 const filterBtn = document.querySelectorAll(".filter-btn");

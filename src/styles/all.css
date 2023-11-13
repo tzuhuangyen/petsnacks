@@ -11088,6 +11088,7 @@ header .container {
   }
 }
 
+/* review */
 .review h2,
 .review .h2 {
   margin-top: 40px;
@@ -11101,7 +11102,7 @@ header .container {
 .review .card {
   align-items: center;
   border: none;
-  max-width: 50%;
+  /* max-width: 50%; */
 }
 .review .card img {
   width: 100px;
@@ -11160,104 +11161,144 @@ header .container {
   height: 120px;
   border-radius: 50%;
 }
+.reviewSwiper {
+  .card {
+    align-items: center;
+    border: none;
+    height: auto;
+  }
+  .review-cardBody {
+    position: relative;
+    right: 0;
+    background-color: #faf8f8;
+    border-radius: 24px 24px 24px 0;
 
-footer {
-  background-color: #f4aa9a;
-  width: 100%;
-  padding-top: 24px;
-  padding-bottom: 16px;
-}
-@media (min-width: 768px) {
+    &:after {
+      content: "";
+      position: absolute;
+      right: calc(50%-12px);
+      bottom: -18px;
+      transform: rotate(90deg);
+      width: 0;
+      height: 0;
+      border-width: 12px 0 12px 12px;
+      border-style: solid;
+      border-color: transparent transparent transparent #faf8f8;
+    }
+  }
+
+  .reviewPetPic {
+    position: absolute;
+    top: -30%;
+    right: 20%;
+    width: 80px;
+    height: 100px;
+    border-radius: 50%;
+  }
+  .reviewFoodPic {
+    width: 320px;
+    height: auto;
+  }
+
+  /* footer */
   footer {
-    padding-top: 42px;
-    padding-bottom: 40px;
+    background-color: #f4aa9a;
+    width: 100%;
+    padding-top: 24px;
+    padding-bottom: 16px;
   }
-}
-@media (min-width: 768px) {
-  footer .logo a {
-    font-size: 28px;
+  @media (min-width: 768px) {
+    footer {
+      padding-top: 42px;
+      padding-bottom: 40px;
+    }
   }
-}
-footer .footer {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 55px;
-}
-footer .container {
-  padding-top: 14px;
-  padding-bottom: 14px;
-}
-@media (min-width: 768px) {
+  @media (min-width: 768px) {
+    footer .logo a {
+      font-size: 28px;
+    }
+  }
+  footer .footer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 55px;
+  }
   footer .container {
-    max-width: 720px;
+    padding-top: 14px;
+    padding-bottom: 14px;
   }
-}
-@media (min-width: 992px) {
-  footer .container {
-    max-width: 960px;
+  @media (min-width: 768px) {
+    footer .container {
+      max-width: 720px;
+    }
   }
-}
+  @media (min-width: 992px) {
+    footer .container {
+      max-width: 960px;
+    }
+  }
 
-footer ul {
-  margin-bottom: 0;
-  padding-left: 0;
-}
-footer h1,
-footer .h1 {
-  font-size: 18px;
-  margin-bottom: 0;
-}
-@media (min-width: 768px) {
+  footer ul {
+    margin-bottom: 0;
+    padding-left: 0;
+  }
   footer h1,
   footer .h1 {
-    margin-right: 24px;
-    font-size: 28px;
+    font-size: 18px;
+    margin-bottom: 0;
   }
-}
-footer h1 a,
-footer .h1 a {
-  color: #473f3d;
-}
-footer h1 img,
-footer .h1 img {
-  width: 40px;
-  height: 32px;
-}
-@media (min-width: 768px) {
+  @media (min-width: 768px) {
+    footer h1,
+    footer .h1 {
+      margin-right: 24px;
+      font-size: 28px;
+    }
+  }
+  footer h1 a,
+  footer .h1 a {
+    color: #473f3d;
+  }
   footer h1 img,
   footer .h1 img {
-    width: 70px;
-    height: 54px;
+    width: 40px;
+    height: 32px;
   }
-}
+  @media (min-width: 768px) {
+    footer h1 img,
+    footer .h1 img {
+      width: 70px;
+      height: 54px;
+    }
+  }
 
-.social {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.social li {
-  list-style: none;
-}
-.social li:not(:last-child) {
-  margin-right: 19px;
-}
-.social li:hover {
-  transform: scale(1.5);
-  cursor: pointer;
-}
-.social li img {
-  width: 22px;
-  height: 22px;
-}
-@media (min-width: 768px) {
+  .social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .social li {
+    list-style: none;
+  }
+  .social li:not(:last-child) {
+    margin-right: 19px;
+  }
+  .social li:hover {
+    transform: scale(1.5);
+    cursor: pointer;
+  }
   .social li img {
-    width: 50px;
-    height: 50px;
+    width: 22px;
+    height: 22px;
   }
-}
+  @media (min-width: 768px) {
+    .social li img {
+      width: 50px;
+      height: 50px;
+    }
+  }
 
-.copyRight {
-  text-align: center;
-  display: block;
-} /*# sourceMappingURL=all.css.map */
+  .copyRight {
+    text-align: center;
+    display: block;
+  } /*# sourceMappingURL=all.css.map */
+}

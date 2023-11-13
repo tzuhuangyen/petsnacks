@@ -117,7 +117,7 @@ const renderProducts = () => {
   products.forEach((product) => {
     const card = createProductCard(product);
     productList.appendChild(card);
-    // console.log(productList);
+    console.log(productList);
   });
 };
 renderProducts();

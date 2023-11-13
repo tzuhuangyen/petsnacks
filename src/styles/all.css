@@ -1,0 +1,95 @@
+/* --bs-primary: #f4aa9a;
+--bs-secondary: #f9d6e2; */
+
+/* navbar color :#f4aa9a */
+/* btn color:#f9d6e2; */
+/* blog title:color: #f4aa9a; */
+
+/* navbar */
+.logo {
+  margin: 8px;
+}
+.logo a {
+  font-size: 18px;
+  color: #473f3d;
+}
+form {
+  margin-right: 8px;
+}
+form input::placeholder {
+  font-size: 12px;
+}
+form .form-control {
+  padding: 6px;
+}
+header .container-fluid {
+  background-color: #f4aa9a;
+}
+
+/* footer */
+footer .container-fluid {
+  background-color: #f4aa9a;
+  padding: 40px 16px 16px 16px;
+}
+footer .social {
+  margin: 8px;
+}
+footer .social li {
+  margin-right: 1rem;
+}
+
+/* contact */
+.contactContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 24px;
+}
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.my-form input[type="submit"] {
+  float: right;
+}
+
+/* 在视窗宽度大于960px以上时调整表单样式 */
+@media (min-width: 961px) {
+  .my-form {
+    min-width: 650px; /* 设置最小宽度为650px */
+  }
+}
+
+/* 在视窗宽度小于560px时调整表单样式 */
+@media (max-width: 560px) {
+  .my-form {
+    min-width: 320px; /* 设置最小宽度为320px */
+  }
+}
+label {
+  color: #800080; /* 紫色标签 */
+}
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #800080; /* 紫色边框 */
+  border-radius: 4px;
+}
+input[type="submit"] {
+  background-color: #800080; /* 紫色按钮背景 */
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  background-color: #5a005a; /* 紫色按钮背景 - 悬停时 */
+}

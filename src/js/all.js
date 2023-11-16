@@ -23,6 +23,17 @@ var swiper = new Swiper(".reviewSwiper", {
     clickable: true,
   },
 });
+var reviewSwiper = new Swiper(".reviewSwiper", {
+  loop: true, // Make sure loop is set to true
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
 //js for products list
 const productList = document.querySelector("#productList");
 //filter by food type
